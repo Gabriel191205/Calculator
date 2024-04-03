@@ -1,0 +1,79 @@
+body{
+    background-color: #f2f2f2;
+    display: flex;
+    grid-template-areas: 
+    "Display Display Display" 
+    "Numeros Numeros Numeros"
+    "Numeros Numeros Numeros"
+    "Numeros Numeros Numeros"
+    "Numeros Numeros Numeros";
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto 40vh auto;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.ContainerNumeros{
+    display: flex;
+    margin-top: 8px;
+}
+
+.Numeros{
+    width: 75px;
+    height: 58px;
+    left: 159px;
+    top: 178px;
+    border: solid 1px;
+    color: #000;
+    background-color: #fff;
+    text-align: center;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    margin-right: 4px;
+    margin-left: 4px;
+    cursor:  pointer;
+}
+
+.Display{
+    width: 319px;
+    height: 58px;
+    border: solid 1px;
+    color: #000;
+    margin-left: 3px;
+}
+
+#ab{
+    width: 158px;
+    height: 58px;
+    left: 159px;
+    top: 178px;
+    border: solid 1px;
+    color: #000;
+    background-color: #fff;
+    text-align: center;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    margin-right: 4px;
+    margin-left: 4px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 780px) {
+    body{
+        grid-template-areas: 
+        "Display Display Display"
+        "Numeros Numeros Numeros"
+        "Numeros Numeros Numeros"
+        "Numeros Numeros Numeros"
+        "Numeros Numeros Numeros";
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto 40vh auto;
+    }
+} 
